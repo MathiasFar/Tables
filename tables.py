@@ -5,7 +5,8 @@ class AppendingError(Exception):
     pass
 
 class Table:
-    def __init__(self, includeId=False):
+    def __init__(self, name, includeId=False):
+        self.name = name
         self.table = []
         self.names = []
         self.includeId = includeId
